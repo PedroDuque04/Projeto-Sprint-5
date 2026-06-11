@@ -17,6 +17,9 @@ if hist_checkbox:
 hist_button = st.checkbox('Criar Gráfico')
 
 if hist_button:
+    st.write(
+        'Criando um gráfico para o conjunto de dados de anúncios de vendas de carro')
+
     fig = px.scatter(car_data, x="odometer", y="price")
 
     st.plotly_chart(fig, use_container_width=True)

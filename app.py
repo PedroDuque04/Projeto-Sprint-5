@@ -11,4 +11,4 @@ if hist_button:
 
     fig = px.histogram(car_data, x="odometer")
 
-    st.plotly_chart(fig, use_container_width=True)pedro
+    st.plotly_chart(fig, use_container_width=True)

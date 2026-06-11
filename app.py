@@ -2,6 +2,8 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
+st.header('Análise de Anúncios de Veículos')
+
 car_data = pd.read_csv('vehicles.csv')
 hist_checkbox = st.checkbox('Criar Histograma')
 
@@ -14,9 +16,9 @@ if hist_checkbox:
     st.plotly_chart(fig, use_container_width=True)
 
 
-hist_button = st.checkbox('Criar Gráfico')
+scatter_checkbox = st.checkbox('Criar Gráfico')
 
-if hist_button:
+if scatter_checkbox:
     st.write(
         'Criando um gráfico para o conjunto de dados de anúncios de vendas de carro')
 
